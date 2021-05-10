@@ -167,7 +167,7 @@ public class SchedulingSearcherState {
     }
 
     public LinkedList<ExecutorDetails> getUnassignedAckers() {
-        return unassignedAckers;
+        return new LinkedList<>(unassignedAckers);
     }
 
     public ExecutorDetails peekUnassignedAckers() {

@@ -38,7 +38,7 @@ public class InMemoryTopologyActionNotifier implements ITopologyActionNotifierPl
     }
 
     public List<String> getTopologyActions(String topologyName) {
-        return topologyToActions.get(topologyName);
+        return new LinkedList<>(topologyToActions.get(topologyName));
     }
 
     @Override
